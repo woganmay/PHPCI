@@ -33,8 +33,8 @@ cat >/etc/apache2/sites-available/vagrant <<EOL
 		allow from all
         
         RewriteEngine on
-        RewriteCond \$1 !^(index\\.php|assets)
-        RewriteRule ^(.*)$ /vagrant/public/index.php/$1 [L]
+        RewriteCond \\$1 !^(index\\.php|assets)
+        RewriteRule ^(.*)$ /vagrant/public/index.php/\\$1 [L]
         
 	</Directory>
 	
